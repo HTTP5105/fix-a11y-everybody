@@ -1,6 +1,6 @@
+
 <!Doctype html>
 <html lang="en">
-
 <head>
   <meta charset="utf-8">
   <title>Fix my accessibility</title>
@@ -15,28 +15,33 @@
       font-size: 24px;
       line-height: 2;
     }
+
     footer {
       font-size: 16px;
     }
+
     h1 {
       line-height: 1.1;
     }
   </style>
   <style>
     h1 {
-      color:#959595;
+      color: red;
     }
+
     .tap {
       height: 6rem;
       width: 6rem;
       border: 0 solid transparent;
       background-image: url('https://a11y2020.ca/images/tap.svg');
     }
+
     [role="button"] {
       color: blue;
       text-decoration: underline;
       cursor: pointer;
     }
+
     *:focus {
       outline: 1px solid transparent !important;
     }
@@ -48,51 +53,64 @@
     <h1>Welcome</h1>
     <nav>
       <table>
-        <thead><tr><th colspan="2" role="heading" aria-level="1">Navigation</th></tr></thead>
+        <thead>
+          <tr>
+            <th colspan="2" role="heading">Navigation</th>
+          </tr>
+        </thead>
         <tbody>
           <tr>
-            <th>Link:</th><td><a href="#intro">Link to introduction</a></td>
+            <th>Link:</th>
+            <td><a href="#intro">Link to introduction</a></td>
           </tr>
           <tr>
-            <th>Link:</th><td><a href="#list">Link to instructions</a></td>
+            <th>Link:</th>
+            <td><a href="#list">Link to instructions</a></td>
           </tr>
           <tr>
-            <th>Link:</th><td><a href="#list">Link to list of elements</a></td>
+            <th>Link:</th>
+            <td><a href="#list">Link to list of elements</a></td>
           </tr>
         </tbody>
       </table>
     </nav>
   </header>
   <main>
-    
+
     <h1 id="intro">I have some accessibility issues. Help!</h1>
-<<<<<<< HEAD
-    <li id="list">Take your time and work through my issues.</li>
-    <ul id="list" role="doc-part">
-      <audio
-=======
- 
-    <ul id="list" role="list" aria-checked="true">
-      <li id="list">Take your time and work through my issues.</li>
+    <li class="list">Take your time and work through my issues.</li>
+    <ul class="list" role="list">
+      <audio controls aria-controls="true" src="https://a11y2020.ca/audio/hey-everybody.mp3">
+        Your browser does not support the
+        <code>audio</code> element.
+      </audio>
+      <a href="#"></a>
+      <form role="form" aria-label="Janet Jackson is underrated.">
+        <input type="image" src="https://a11y2020.ca/images/white.gif" role="image-input">
+        <img src="https://a11y2020.ca/images/white.gif">
+        <button class="tap"></button>
+        <div role="button">Click me.</div>
+      </form>
+    <ul class="ul-list" role="list" aria-checked="true">
+      <li class="li-list">Take your time and work through my issues.</li>
     </ul>
-    <audio
->>>>>>> 9e7871df3f06c04d51f63cafa5a8bc5ff8e6dd24
+    <audio>
         controls
         aria-controls="code">
         <source src="https://a11y2020.ca/audio/hey-everybody.mp3">
             Your browser does not support the
             <code>audio</code> element.
-     </audio>
-      <a href="#"></a>
-      <form role="form" aria-label="Janet Jackson is underrated.">
-        <input type="image" src="https://a11y2020.ca/images/white.gif" role="img" alt="Click">
-        <img src="https://a11y2020.ca/images/white.gif" alt="Point">
-        <button class="tap"></button>
-        <div role="button">Click me.</div>
-      </form>
+    </audio>
+    <a href="#">I am a link</a>
+    <form role="form" aria-labl="Janet Jackson is underrated.">
+      <input type="image" src="https://a11y2020.ca/images/white.gif" role="image-input" alt="Image of the color white.">
+      <!--Here I have included an alt attribute for the img element below. Estevan Cordero-->
+      <img src="https://a11y2020.ca/images/white.gif" alt="Image of the color white.">
+      <button class="tap">Click Me</button>
+      <div role="button">Click me.</div>
+    </form>
     </ul>
   </main>
   <footer>Copyright N/A</footer>
 </body>
-
 </html>
