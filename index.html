@@ -1,4 +1,13 @@
 
+<!doctype html>
+
+<html lang="en-CA">
+
+
+
+
+
+
 <!Doctype html>
 <html lang="en">
 <head>
@@ -26,7 +35,11 @@
   </style>
   <style>
     h1 {
-      color: red;
+
+      color: #959595;
+
+     
+
     }
 
     .tap {
@@ -78,39 +91,33 @@
   <main>
 
     <h1 id="intro">I have some accessibility issues. Help!</h1>
-    <li class="list">Take your time and work through my issues.</li>
-    <ul class="list" role="list">
+
+    <li id="list">Take your time and work through my issues.</li>
+    <ul id="list" role="list" aria-checked="true">
+
+
       <audio controls aria-controls="true" src="https://a11y2020.ca/audio/hey-everybody.mp3">
         Your browser does not support the
         <code>audio</code> element.
       </audio>
       <a href="#"></a>
-      <form role="form" aria-label="Janet Jackson is underrated.">
+
+      <form role="form" aria-labl="Janet Jackson is underrated.">
+
+      
+
         <input type="image" src="https://a11y2020.ca/images/white.gif" role="image-input">
         <img src="https://a11y2020.ca/images/white.gif">
         <button class="tap"></button>
         <div role="button">Click me.</div>
       </form>
-    <ul class="ul-list" role="list" aria-checked="true">
-      <li class="li-list">Take your time and work through my issues.</li>
-    </ul>
-    <audio>
-        controls
-        aria-controls="code">
-        <source src="https://a11y2020.ca/audio/hey-everybody.mp3">
-            Your browser does not support the
-            <code>audio</code> element.
-    </audio>
-    <a href="#">I am a link</a>
-    <form role="form" aria-labl="Janet Jackson is underrated.">
-      <input type="image" src="https://a11y2020.ca/images/white.gif" role="image-input" alt="Image of the color white.">
-      <!--Here I have included an alt attribute for the img element below. Estevan Cordero-->
-      <img src="https://a11y2020.ca/images/white.gif" alt="Image of the color white.">
-      <button class="tap">Click Me</button>
-      <div role="button">Click me.</div>
-    </form>
+
+
+
+
+
     </ul>
   </main>
-  <footer>Copyright N/A</footer>
+  <footer>Copyright Security and Quality Assurance - HTTP-5201-RNA (lab-5) </footer>
 </body>
 </html>
