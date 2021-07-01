@@ -1,5 +1,6 @@
 <!Doctype html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <title>Fix my accessibility</title>
@@ -22,9 +23,10 @@
     h1 {
       line-height: 1.1;
     }
-    small{
+
+    small {
       font-weight: bold;
-      color:blue;
+      color: blue;
     }
   </style>
   <style>
@@ -32,7 +34,7 @@
 
       color: red;
       text-shadow: 2px 2px black;
-     
+
 
     }
 
@@ -92,12 +94,14 @@
         </audio>
         <a href="#"></a>
         <form role="form" aria-label="Janet Jackson is underrated.">
-          <input type="image" src="https://a11y2020.ca/images/white.gif" role="image-input">
+          <input type="image" src="https://a11y2020.ca/images/white.gif" role="image-input"
+              alt="clip art of pushing a button">
           <img src="https://a11y2020.ca/images/white.gif" alt="image of play button">
-          <button class="tap">Play media</button>
+          <button class="tap" aria-label="Button to refresh the page"></button>
           <div role="button">Click me.</div>
-        </form> 
+        </form>
   </main>
   <footer>Copyright Security and Quality Assurance - HTTP-5201-RNA <span>(lab-5)</span> </footer>
 </body>
+
 </html>
